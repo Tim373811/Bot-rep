@@ -32,12 +32,12 @@ function addToHistory(channelId, role, text) {
 // ─── APPEL GEMINI ─────────────────────────────────────────────────────────────
 async function askGemini(channelId, userMessage) {
   const genAI = getNextGeminiClient();
-  const model = genAI.getGenerativeModel({ model: config.geminiModel || 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: config.geminiModel || 'gemini-2.0-flash', systemInstruction: currentPrompt });
 
   const chat = model.startChat({
     history: getHistory(channelId),
     generationConfig: { maxOutputTokens: 1500, temperature: 0.8 },
-    systemInstruction: currentPrompt,
+    
   });
 
   const result = await chat.sendMessage(userMessage);
@@ -159,4 +159,5 @@ function splitMessage(text, maxLength) {
   return chunks;
 }
 
-client.login(process.env.DISCORD_TOKEN || config.discordToken);
+client.login(config.discordToken);
+
