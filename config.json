@@ -1,0 +1,20 @@
+{
+  "discordToken": "TON_TOKEN_DISCORD_ICI",
+
+  "geminiTokens": [
+    "GEMINI_TOKEN_1",
+    "GEMINI_TOKEN_2"
+  ],
+
+  "geminiModel": "gemini-1.5-flash",
+
+  "generalChannelId": "ID_DU_SALON_GENERAL",
+
+  "authorizedUserIds": [
+    "ID_DISCORD_DU_MEMBRE_AUTORISE"
+  ],
+
+  "authorizedRoleIds": [],
+
+  "systemPrompt": "Tu es un membre sympa et bavard d'un serveur Discord. Tu réponds à tous les messages du salon général de façon naturelle et décontractée. Sois bref, utilise un langage familier et des emojis avec modération. Tu vois le nom de chaque personne au format [Prénom]."
+}
