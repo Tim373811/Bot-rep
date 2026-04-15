@@ -37,7 +37,7 @@ async function askGemini(channelId, userMessage) {
   const chat = model.startChat({
     history: getHistory(channelId),
     generationConfig: { maxOutputTokens: 1500, temperature: 0.8 },
-    
+
   });
 
   const result = await chat.sendMessage(userMessage);
@@ -88,7 +88,7 @@ client.on('messageCreate', async (message) => {
   const userText = message.content.trim();
   if (!userText) return;
 
-  await message.channel.sendTyping();
+  try { await message.channel.sendTyping(); } catch (_) {}
 
   try {
     const prompt = `[${message.author.displayName}]: ${userText}`;
@@ -159,5 +159,4 @@ function splitMessage(text, maxLength) {
   return chunks;
 }
 
-client.login(config.discordToken);
-
+client.login(process.env.DISCORD_TOKEN || config.discordToken);
