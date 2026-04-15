@@ -1,17 +1,16 @@
 {
-  "discordToken": "TON_TOKEN_DISCORD_ICI",
+  "discordToken": "MTQ5NDA2NzQyMTkxOTgzODQyMA.Gbognc._oA4BioQ4DFjGJZUfw5Wx-XYsQGqbk_-tPJ7U0",
 
   "geminiTokens": [
-    "GEMINI_TOKEN_1",
-    "GEMINI_TOKEN_2"
+    "GEMINI_TOKEN_1"
   ],
 
   "geminiModel": "gemini-1.5-flash",
 
-  "generalChannelId": "ID_DU_SALON_GENERAL",
+  "generalChannelId": "1460965434739396803",
 
   "authorizedUserIds": [
-    "ID_DISCORD_DU_MEMBRE_AUTORISE"
+    "1065261134489325759"
   ],
 
   "authorizedRoleIds": [],
