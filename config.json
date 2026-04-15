@@ -1,8 +1,8 @@
 {
-  "discordToken": "MTQ5NDA2NzQyMTkxOTgzODQyMA.Gbognc._oA4BioQ4DFjGJZUfw5Wx-XYsQGqbk_-tPJ7U0",
+  "discordToken": "DISCORD",
 
   "geminiTokens": [
-    "GEMINI_TOKEN_1"
+    "AIzaSyA3ooRhnhSIHsIkP8bZcsXy-6yapZw7TZk"
   ],
 
   "geminiModel": "gemini-1.5-flash",
